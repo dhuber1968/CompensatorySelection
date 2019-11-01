@@ -1,14 +1,14 @@
 function GRE_simulation
 
     Npop = 1000000;  % number of applicants
-    Nlat=3;          % number of latent variables (aptitude, motivation, curiousity)
+    Nlat=3;          % number of latent variables (knowledge, motivation, curiousity)
 
     Latent = randn(Npop,Nlat); % sample standard normal deviations for latent variables
     
     % determine observed variables in percentil scores from latent variables 
     
-    GRE=Percentile(  [1  0   0]);  % aptitude only 
-    GPA=Percentile(  [1  1   0]);  % aptitude and motivation 
+    GRE=Percentile(  [1  0   0]);  % knowledge only 
+    GPA=Percentile(  [1  1   0]);  % knowledge and motivation 
     LET=Percentile(  [0  1   1]);  % motivation and curiousity
     SOP=Percentile(  [0  0   1]);  % curiousity
 
