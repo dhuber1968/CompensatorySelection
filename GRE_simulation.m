@@ -43,7 +43,7 @@ function GRE_simulation
             GRE_N(g)=sum(GRE==g & Admit);                  % number of successful students at GRE percentile
             GRE_T(g)=sum(GRE==g);                          % number of admitted students at GRE percentile
         end
-        GRE_dist=GRE_N./GRE_T;                            % probabo;otu of admittance at GRE percentile
+        GRE_dist=GRE_N./GRE_T;                            % probability of admittance at GRE percentile
         
         % output numbers
         AveSuccess=mean(Success(Admit))
